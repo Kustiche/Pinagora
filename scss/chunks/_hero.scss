@@ -1,0 +1,63 @@
+.hero {
+  position: relative;
+  padding: 220px 0 135px 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '';
+    width: 568px;
+    height: 881px;
+    background-image: url('../img/hero/city-height-down.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    left: 0;
+    width: 590px;
+    height: 1165px;
+    background-image: url('../img/hero/city-height-up.svg');
+  }
+
+  .container {
+    max-width: 1430px;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 55px;
+    text-align: center;
+    font-family: 'RadioCanada-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 94px;
+    line-height: 70%;
+  }
+
+  &__slogan {
+    margin-bottom: 70px;
+    text-align: center;
+    max-width: 860px;
+    font-family: 'RadioCanada-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 80%;
+
+    &:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
+    width: 625px;
+    height: 700px;
+  }
+}
