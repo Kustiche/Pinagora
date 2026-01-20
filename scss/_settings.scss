@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'RadioCanada-Regular', sans-serif;
+  font-size: 20px;
+  color: #4f4f4f;
+  background-color: #fafafa;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1790px;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-reset {
+  color: inherit;
+  text-decoration: none;
+}
+
+.input-reset {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
