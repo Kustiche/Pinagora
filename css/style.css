@@ -128,6 +128,17 @@ body {
   font-size: 94px;
   line-height: 70%;
 }
+@media (max-width: 1400px) {
+  .hero__title {
+    font-size: 74px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero__title {
+    margin-bottom: 35px;
+    font-size: 64px;
+  }
+}
 .hero__slogan {
   margin-bottom: 70px;
   text-align: center;
@@ -139,6 +150,19 @@ body {
 }
 .hero__slogan:first-of-type {
   margin-bottom: 20px;
+}
+@media (max-width: 1400px) {
+  .hero__slogan {
+    font-size: 38px;
+  }
+}
+@media (max-width: 1200px) {
+  .hero__slogan {
+    font-size: 34px;
+  }
+  .hero__slogan:first-of-type {
+    margin-bottom: 10px;
+  }
 }
 .hero__img {
   width: 625px;
