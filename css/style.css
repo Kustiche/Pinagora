@@ -256,13 +256,18 @@ body {
 .about-us__smiling-people {
   width: 450px;
   height: 360px;
+  border-radius: 20px;
 }
 .about-us__people-high-five {
   width: 340px;
   height: 520px;
+  border-radius: 20px;
 }
 .about-us__people-at-the-computer {
   position: absolute;
   bottom: 22px;
   right: -145px;
+  width: 315px;
+  height: 255px;
+  border-radius: 10px;
 }
