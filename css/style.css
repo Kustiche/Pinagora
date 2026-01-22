@@ -166,9 +166,23 @@ body {
     font-size: 34px;
   }
 }
-.hero__img {
-  width: 625px;
-  height: 700px;
+.hero__images {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+}
+.hero__phone-logo {
+  margin-bottom: 85px;
+  width: 300px;
+  height: 615px;
+  border-radius: 45px;
+  box-shadow: -15px 20px 40px rgba(0, 0, 0, 0.3);
+}
+.hero__phone-app {
+  width: 300px;
+  height: 615px;
+  border-radius: 45px;
+  box-shadow: -15px 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .about-us {
