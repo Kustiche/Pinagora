@@ -90,6 +90,8 @@ body {
   margin: 0;
   font-family: "RadioCanada-Medium", sans-serif;
   font-weight: 500;
+  font-size: 64px;
+  line-height: 75%;
 }
 
 .text {
@@ -201,8 +203,6 @@ body {
 }
 .about-us__title {
   margin-bottom: 35px;
-  font-size: 64px;
-  line-height: 75%;
 }
 .about-us__text {
   margin-bottom: 30px;
@@ -284,4 +284,65 @@ body {
   width: 315px;
   height: 255px;
   border-radius: 10px;
+}
+
+.about-app {
+  padding: 45px 0 70px 0;
+}
+.about-app__title {
+  margin-bottom: 65px;
+}
+.about-app__wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.about-app__img {
+  margin-bottom: 50px;
+  width: 560px;
+  height: 480px;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px 0 rgba(62, 86, 105, 0.1);
+}
+.about-app__img--long {
+  margin-bottom: 0;
+  height: 900px;
+}
+.about-app__img--mrg-bt-less {
+  margin-bottom: 30px;
+}
+.about-app__img--short {
+  margin-bottom: 0;
+  height: 390px;
+}
+.about-app__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 560px;
+}
+.about-app__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about-app__text {
+  margin-bottom: 30px;
+  font-family: "RadioCanada-Light", sans-serif;
+}
+.about-app__text .first-word-blue {
+  font-family: "RadioCanada-SemiBold", sans-serif;
+  color: #53a6ea;
+}
+.about-app__link {
+  padding: 10px 85px;
+  font-family: "RadioCanada-SemiBold", sans-serif;
+  font-size: 16px;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #39b7ff;
+  transition: transform 0.4s;
+}
+.about-app__link:hover {
+  transform: scale(0.9);
 }
