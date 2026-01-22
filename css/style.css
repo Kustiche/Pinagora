@@ -346,3 +346,47 @@ body {
 .about-app__link:hover {
   transform: scale(0.9);
 }
+
+.problem-solution {
+  padding: 70px 0 75px 0;
+}
+.problem-solution__title {
+  margin-bottom: 85px;
+  max-width: 695px;
+  line-height: 105%;
+}
+.problem-solution__cards {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 95px 40px;
+}
+.problem-solution__card {
+  position: relative;
+  padding-left: 70px;
+  max-width: 560px;
+}
+.problem-solution__card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/problem-solution/card-decor.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: rotate(18deg);
+}
+.problem-solution__subtitle {
+  margin-bottom: 20px;
+  font-family: "RadioCanada-Medium", sans-serif;
+  font-size: 44px;
+  line-height: 105%;
+  color: #0a8ed9;
+}
+.problem-solution__text {
+  font-family: "RadioCanada-Light", sans-serif;
+  line-height: 125%;
+}
