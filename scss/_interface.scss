@@ -26,3 +26,24 @@
     transform: scale(0.9);
   }
 }
+
+.nav {
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 40px;
+    font-size: 18px;
+    transition: transform 0.4s;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+}
