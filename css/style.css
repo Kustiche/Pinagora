@@ -98,6 +98,22 @@ body {
   margin: 0;
 }
 
+.link {
+  padding: 10px 0;
+  text-align: center;
+  max-width: 240px;
+  width: 100%;
+  font-family: "RadioCanada-SemiBold", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #39b7ff;
+  border-radius: 30px;
+  transition: transform 0.4s;
+}
+.link:hover {
+  transform: scale(0.9);
+}
+
 .hero {
   position: relative;
   padding: 220px 0 135px 0;
@@ -213,13 +229,8 @@ body {
 }
 .about-us__link {
   position: relative;
-  padding: 15px 95px 15px 50px;
-  font-family: "RadioCanada-SemiBold", sans-serif;
-  font-size: 18px;
-  color: #fff;
-  background-color: #39b7ff;
-  border-radius: 30px;
-  transition: transform 0.4s;
+  text-align: left;
+  padding: 15px 0 15px 50px;
 }
 .about-us__link::after {
   position: absolute;
@@ -233,9 +244,6 @@ body {
   background-size: cover;
   background-position: center;
   transform: translateY(-50%);
-}
-.about-us__link:hover {
-  transform: scale(0.9);
 }
 .about-us__images {
   position: relative;
@@ -335,16 +343,8 @@ body {
   color: #53a6ea;
 }
 .about-app__link {
-  padding: 10px 85px;
-  font-family: "RadioCanada-SemiBold", sans-serif;
+  max-width: 260px;
   font-size: 16px;
-  border-radius: 30px;
-  color: #ffffff;
-  background-color: #39b7ff;
-  transition: transform 0.4s;
-}
-.about-app__link:hover {
-  transform: scale(0.9);
 }
 
 .problem-solution {
@@ -389,4 +389,30 @@ body {
 .problem-solution__text {
   font-family: "RadioCanada-Light", sans-serif;
   line-height: 125%;
+}
+
+.download {
+  padding: 160px 0 175px 0;
+  background-color: #ffffff;
+}
+.download__container {
+  max-width: 755px;
+}
+.download__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download__title {
+  margin-bottom: 20px;
+}
+.download__text {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 28px;
+}
+.download__icon-download {
+  margin-bottom: 40px;
+  width: 392px;
+  height: 114px;
 }

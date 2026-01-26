@@ -9,3 +9,20 @@
 .text {
   margin: 0;
 }
+
+.link {
+  padding: 10px 0;
+  text-align: center;
+  max-width: 240px;
+  width: 100%;
+  font-family: 'RadioCanada-SemiBold', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #39b7ff;
+  border-radius: 30px;
+  transition: transform 0.4s;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}

@@ -29,13 +29,8 @@
 
   &__link {
     position: relative;
-    padding: 15px 95px 15px 50px;
-    font-family: 'RadioCanada-SemiBold', sans-serif;
-    font-size: 18px;
-    color: #fff;
-    background-color: #39b7ff;
-    border-radius: 30px;
-    transition: transform 0.4s;
+    text-align: left;
+    padding: 15px 0 15px 50px;
 
     &::after {
       position: absolute;
@@ -49,10 +44,6 @@
       background-size: cover;
       background-position: center;
       transform: translateY(-50%);
-    }
-
-    &:hover {
-      transform: scale(0.9);
     }
   }
 
