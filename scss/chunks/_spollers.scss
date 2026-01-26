@@ -1,0 +1,81 @@
+.spollers {
+  display: flex;
+  flex-direction: column;
+  max-width: 1160px;
+  width: 100%;
+}
+
+.spoller {
+  margin-bottom: 25px;
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 20px 15px;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'RadioCanada-Medium', sans-serif;
+    font-size: 28px;
+    line-height: 105%;
+
+    &::after {
+      position: absolute;
+      content: '';
+      border-top: 1px solid #0a8ed9;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+
+    &:hover {
+      color: #0a8ed9;
+
+      .spoller__icon {
+        stroke: #0a8ed9;
+      }
+    }
+
+    &::marker {
+      content: '';
+      font-size: 0;
+    }
+  }
+
+  &__title {
+    transition: color 0.4s;
+  }
+
+  &__icon {
+    width: 15px;
+    height: 9px;
+    stroke: #4f4f4f;
+    transition: all 0.4s;
+  }
+
+  &__content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 30px 150px 25px 15px;
+    font-family: 'RadioCanada-Light', sans-serif;
+    font-size: 20px;
+    line-height: 125%;
+  }
+
+  &:open {
+    .spoller__title {
+      color: #0a8ed9;
+    }
+
+    .spoller__icon {
+      transform: rotate(180deg);
+      stroke: #0a8ed9;
+    }
+  }
+}

@@ -130,6 +130,77 @@ body {
   transform: scale(0.9);
 }
 
+.spollers {
+  display: flex;
+  flex-direction: column;
+  max-width: 1160px;
+  width: 100%;
+}
+
+.spoller {
+  margin-bottom: 25px;
+}
+.spoller__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 20px 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "RadioCanada-Medium", sans-serif;
+  font-size: 28px;
+  line-height: 105%;
+}
+.spoller__header::after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #0a8ed9;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.spoller__header:hover {
+  color: #0a8ed9;
+}
+.spoller__header:hover .spoller__icon {
+  stroke: #0a8ed9;
+}
+.spoller__header::marker {
+  content: "";
+  font-size: 0;
+}
+.spoller__title {
+  transition: color 0.4s;
+}
+.spoller__icon {
+  width: 15px;
+  height: 9px;
+  stroke: #4f4f4f;
+  transition: all 0.4s;
+}
+.spoller__content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+.spoller__text {
+  margin: 0;
+  padding: 30px 150px 25px 15px;
+  font-family: "RadioCanada-Light", sans-serif;
+  font-size: 20px;
+  line-height: 125%;
+}
+.spoller:open .spoller__title {
+  color: #0a8ed9;
+}
+.spoller:open .spoller__icon {
+  transform: rotate(180deg);
+  stroke: #0a8ed9;
+}
+
 .hero {
   position: relative;
   padding: 220px 0 135px 0;
@@ -405,6 +476,18 @@ body {
 .problem-solution__text {
   font-family: "RadioCanada-Light", sans-serif;
   line-height: 125%;
+}
+
+.faq {
+  padding: 75px 0 150px 0;
+}
+.faq__title {
+  margin-bottom: 55px;
+}
+.faq__wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .download {

@@ -2,10 +2,13 @@
 @use 'settings';
 @use 'interface';
 
+@use 'chunks/spollers';
+
 @use 'chunks/header';
 @use 'chunks/hero';
 @use 'chunks/about-us';
 @use 'chunks/about-app';
 @use 'chunks/problem-solution';
+@use 'chunks/faq';
 @use 'chunks/download';
 @use 'chunks/footer';
