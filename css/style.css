@@ -397,17 +397,19 @@ body.no-scroll {
   position: relative;
   padding: 220px 0 135px 0;
 }
+@media (max-width: 1200px) {
+  .hero {
+    padding: 100px 0 65px 0;
+  }
+}
 .hero::before, .hero::after {
   position: absolute;
-  right: 0;
   top: 0;
   content: "";
-  width: 568px;
-  height: 881px;
-  background-image: url("../img/hero/city-height-down.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 .hero::before {
   left: 0;
@@ -415,8 +417,57 @@ body.no-scroll {
   height: 1165px;
   background-image: url("../img/hero/city-height-up.svg");
 }
+@media (max-width: 1200px) {
+  .hero::before {
+    width: 300px;
+    height: 735px;
+  }
+}
+@media (max-width: 992px) {
+  .hero::before {
+    left: 50%;
+    width: 768px;
+    height: 764px;
+    background-image: url("../img/hero/bkg-city-mobile.svg");
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .hero::before {
+    width: 576px;
+    height: 572px;
+  }
+}
+@media (max-width: 576px) {
+  .hero::before {
+    width: 360px;
+    height: 352px;
+  }
+}
+.hero::after {
+  right: 0;
+  width: 568px;
+  height: 881px;
+  background-image: url("../img/hero/city-height-down.svg");
+}
+@media (max-width: 1200px) {
+  .hero::after {
+    width: 408px;
+    height: 641px;
+  }
+}
+@media (max-width: 992px) {
+  .hero::after {
+    display: none;
+  }
+}
 .hero .container {
   max-width: 1430px;
+}
+@media (max-width: 768px) {
+  .hero .container {
+    padding: 0 9px;
+  }
 }
 .hero__wrap {
   display: flex;
@@ -438,6 +489,24 @@ body.no-scroll {
   .hero__title {
     margin-bottom: 35px;
     font-size: 64px;
+  }
+}
+@media (max-width: 992px) {
+  .hero__title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__title {
+    margin-bottom: 25px;
+    font-size: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__title {
+    margin-bottom: 5px;
+    max-width: 320px;
+    line-height: 100%;
   }
 }
 .hero__slogan {
@@ -463,23 +532,57 @@ body.no-scroll {
     font-size: 34px;
   }
 }
+@media (max-width: 992px) {
+  .hero__slogan {
+    font-size: 29px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__slogan {
+    font-size: 24px;
+  }
+  .hero__slogan:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__slogan {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 100%;
+  }
+}
 .hero__images {
   display: flex;
   align-items: flex-end;
   gap: 25px;
 }
-.hero__phone-logo {
-  margin-bottom: 85px;
+@media (max-width: 768px) {
+  .hero__images {
+    gap: 10px;
+  }
+}
+.hero__phone-img {
   width: 300px;
   height: 615px;
   border-radius: 45px;
   box-shadow: -15px 20px 40px rgba(0, 0, 0, 0.3);
 }
-.hero__phone-app {
-  width: 300px;
-  height: 615px;
-  border-radius: 45px;
-  box-shadow: -15px 20px 40px rgba(0, 0, 0, 0.3);
+.hero__phone-img:first-of-type {
+  margin-bottom: 85px;
+}
+@media (max-width: 1400px) {
+  .hero__phone-img {
+    width: 250px;
+    height: 505px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__phone-img {
+    width: 154px;
+    height: 314px;
+    border-radius: 25px;
+  }
 }
 
 .about-us {
