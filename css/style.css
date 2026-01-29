@@ -607,7 +607,12 @@ body.no-scroll {
 }
 
 .about-us {
-  padding: 40px 0 45px 0;
+  padding: 40px 0 70px 0;
+}
+@media (max-width: 992px) {
+  .about-us {
+    padding: 0 0 50px 0;
+  }
 }
 .about-us__wrap {
   display: flex;
@@ -865,33 +870,95 @@ body.no-scroll {
 }
 
 .about-app {
-  padding: 45px 0 70px 0;
+  padding: 70px 0;
+}
+@media (max-width: 992px) {
+  .about-app {
+    padding: 50px 0 45px 0;
+  }
 }
 .about-app__title {
   margin-bottom: 65px;
+}
+@media (max-width: 992px) {
+  .about-app__title {
+    margin-bottom: 30px;
+  }
 }
 .about-app__wrap {
   display: flex;
   align-items: flex-start;
   gap: 40px;
 }
+@media (max-width: 1400px) {
+  .about-app__wrap {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 1200px) {
+  .about-app__wrap {
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .about-app__wrap {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 .about-app__img {
   margin-bottom: 50px;
   width: 560px;
-  height: 480px;
+  height: auto;
   border-radius: 20px;
   box-shadow: 0 4px 14px 0 rgba(62, 86, 105, 0.1);
 }
+@media (max-width: 1400px) {
+  .about-app__img {
+    width: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-app__img {
+    width: 290px;
+  }
+}
+@media (max-width: 992px) {
+  .about-app__img {
+    margin-bottom: 0;
+    width: 320px;
+    height: 319px;
+  }
+}
 .about-app__img--long {
   margin-bottom: 0;
-  height: 900px;
+}
+@media (max-width: 992px) {
+  .about-app__img--long {
+    margin-bottom: 30px;
+    height: 470px;
+  }
+}
+@media (max-width: 576px) {
+  .about-app__img--long {
+    margin-bottom: 55px;
+  }
 }
 .about-app__img--mrg-bt-less {
   margin-bottom: 30px;
 }
+@media (max-width: 992px) {
+  .about-app__img--mrg-bt-less {
+    height: 274px;
+  }
+}
 .about-app__img--short {
   margin-bottom: 0;
-  height: 390px;
+}
+@media (max-width: 992px) {
+  .about-app__img--short {
+    height: 265px;
+  }
 }
 .about-app__inner {
   display: flex;
@@ -899,10 +966,45 @@ body.no-scroll {
   align-items: center;
   max-width: 560px;
 }
+@media (max-width: 1400px) {
+  .about-app__inner:last-of-type {
+    justify-content: space-between;
+    height: 721px;
+  }
+}
+@media (max-width: 1400px) {
+  .about-app__inner:last-of-type {
+    height: 480px;
+  }
+}
+@media (max-width: 992px) {
+  .about-app__inner:last-of-type {
+    height: 567px;
+  }
+  .about-app__inner:first-of-type {
+    margin-bottom: 30px;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 576px) {
+  .about-app__inner:first-of-type {
+    margin-bottom: 20px;
+  }
+}
 .about-app__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (max-width: 992px) {
+  .about-app__content {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .about-app__content {
+    margin-bottom: 40px;
+  }
 }
 .about-app__text {
   margin-bottom: 30px;
@@ -912,9 +1014,20 @@ body.no-scroll {
   font-family: "RadioCanada-SemiBold", sans-serif;
   color: #53a6ea;
 }
+@media (max-width: 1400px) {
+  .about-app__text {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
 .about-app__link {
   max-width: 260px;
   font-size: 16px;
+}
+@media (max-width: 576px) {
+  .about-app__link {
+    max-width: 100%;
+  }
 }
 
 .problem-solution {
