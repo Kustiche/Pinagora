@@ -56,8 +56,8 @@ body.no-scroll {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1790px;
+  padding: 0 20px;
+  max-width: 1800px;
 }
 
 .list-reset {
@@ -92,9 +92,24 @@ body.no-scroll {
 .title {
   margin: 0;
   font-family: "RadioCanada-Medium", sans-serif;
-  font-weight: 500;
   font-size: 64px;
   line-height: 75%;
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 992px) {
+  .title {
+    font-family: "RadioCanada-SemiBold", sans-serif;
+    font-size: 44px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 .text {
@@ -115,6 +130,12 @@ body.no-scroll {
 }
 .link:hover {
   transform: scale(0.9);
+}
+@media (max-width: 576px) {
+  .link {
+    max-width: 100%;
+    font-size: 16px;
+  }
 }
 
 .nav__menu {
@@ -591,7 +612,12 @@ body.no-scroll {
 .about-us__wrap {
   display: flex;
   align-items: center;
-  gap: 115px;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .about-us__wrap {
+    flex-direction: column;
+  }
 }
 .about-us__content {
   display: flex;
@@ -599,8 +625,24 @@ body.no-scroll {
   align-items: flex-start;
   max-width: 675px;
 }
+@media (max-width: 1400px) {
+  .about-us__content {
+    max-width: 365px;
+  }
+}
+@media (max-width: 992px) {
+  .about-us__content {
+    margin-bottom: 75px;
+    max-width: 100%;
+  }
+}
 .about-us__title {
   margin-bottom: 35px;
+}
+@media (max-width: 768px) {
+  .about-us__title {
+    margin-bottom: 26px;
+  }
 }
 .about-us__text {
   margin-bottom: 30px;
@@ -608,6 +650,19 @@ body.no-scroll {
 }
 .about-us__text:last-of-type {
   margin-bottom: 40px;
+}
+@media (max-width: 1400px) {
+  .about-us__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .about-us__text {
+    margin-bottom: 10px;
+  }
+  .about-us__text:last-of-type {
+    margin-bottom: 30px;
+  }
 }
 .about-us__link {
   position: relative;
@@ -627,12 +682,32 @@ body.no-scroll {
   background-position: center;
   transform: translateY(-50%);
 }
+@media (max-width: 992px) {
+  .about-us__link {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .about-us__link::after {
+    right: 10%;
+  }
+}
+@media (max-width: 576px) {
+  .about-us__link::after {
+    right: 26%;
+  }
+}
+@media (max-width: 420px) {
+  .about-us__link::after {
+    right: 22%;
+  }
+}
 .about-us__images {
   position: relative;
   display: flex;
   align-items: center;
   gap: 25px;
-  max-width: 815px;
+  padding-right: 145px;
+  max-width: 960px;
 }
 .about-us__images::before, .about-us__images::after {
   position: absolute;
@@ -649,31 +724,144 @@ body.no-scroll {
   background-image: url("../img/about-us/bkg-big-decor.svg");
   z-index: -1;
 }
+@media (max-width: 1400px) {
+  .about-us__images::before {
+    left: -50px;
+  }
+}
 .about-us__images::after {
   top: -40px;
-  right: -55px;
+  right: 100px;
   width: 94px;
   height: 96px;
   background-image: url("../img/about-us/bkg-small-decor.svg");
   transform: rotate(22deg);
+}
+@media (max-width: 1400px) {
+  .about-us__images {
+    padding-right: 110px;
+  }
+  .about-us__images::after {
+    right: 65px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-us__images {
+    padding-right: 90px;
+  }
+  .about-us__images::after {
+    right: 45px;
+  }
+}
+@media (max-width: 992px) {
+  .about-us__images {
+    justify-content: flex-end;
+    padding-right: 0;
+    max-width: 315px;
+    width: 100%;
+  }
+  .about-us__images::before {
+    top: 0px;
+    left: -50px;
+    width: 129px;
+    height: 131px;
+    transform: rotate(10deg);
+  }
+  .about-us__images::after {
+    top: -70px;
+    right: -65px;
+  }
 }
 .about-us__smiling-people {
   width: 450px;
   height: 360px;
   border-radius: 20px;
 }
+.about-us__smiling-people--mobile {
+  display: none;
+}
+@media (max-width: 1400px) {
+  .about-us__smiling-people {
+    width: 330px;
+    height: 240px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-us__smiling-people {
+    width: 290px;
+    height: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .about-us__smiling-people {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+    width: 247px;
+    height: 222px;
+    z-index: -1;
+  }
+  .about-us__smiling-people--mobile {
+    display: flex;
+  }
+}
 .about-us__people-high-five {
   width: 340px;
   height: 520px;
   border-radius: 20px;
 }
+.about-us__people-high-five--mobile {
+  display: none;
+}
+@media (max-width: 1400px) {
+  .about-us__people-high-five {
+    width: 240px;
+    height: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-us__people-high-five {
+    width: 200px;
+    height: 380px;
+  }
+}
+@media (max-width: 992px) {
+  .about-us__people-high-five {
+    display: none;
+    width: 126px;
+    height: 318px;
+  }
+  .about-us__people-high-five--mobile {
+    display: flex;
+  }
+}
 .about-us__people-at-the-computer {
   position: absolute;
   bottom: 22px;
-  right: -145px;
+  right: 0;
   width: 315px;
   height: 255px;
   border-radius: 10px;
+}
+@media (max-width: 1400px) {
+  .about-us__people-at-the-computer {
+    width: 235px;
+    height: 175px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-us__people-at-the-computer {
+    width: 192px;
+    height: 135px;
+  }
+}
+@media (max-width: 992px) {
+  .about-us__people-at-the-computer {
+    bottom: 0;
+    left: 0;
+    height: 154px;
+  }
 }
 
 .about-app {
