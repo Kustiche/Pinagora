@@ -1,6 +1,10 @@
 .problem-solution {
   padding: 70px 0 75px 0;
 
+  @media (max-width: 992px) {
+    padding: 45px 0 40px 0;
+  }
+
   &__title {
     margin-bottom: 85px;
     max-width: 695px;
