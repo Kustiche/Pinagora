@@ -913,12 +913,12 @@ body.no-scroll {
   border-radius: 20px;
   box-shadow: 0 4px 14px 0 rgba(62, 86, 105, 0.1);
 }
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
   .about-app__img {
     width: 420px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .about-app__img {
     width: 290px;
   }
