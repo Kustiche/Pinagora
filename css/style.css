@@ -92,6 +92,7 @@ body.no-scroll {
 .title {
   margin: 0;
   font-family: "RadioCanada-Medium", sans-serif;
+  font-weight: 500;
   font-size: 64px;
   line-height: 75%;
 }
@@ -103,6 +104,7 @@ body.no-scroll {
 @media (max-width: 992px) {
   .title {
     font-family: "RadioCanada-SemiBold", sans-serif;
+    font-weight: 600;
     font-size: 44px;
   }
 }
@@ -1038,11 +1040,26 @@ body.no-scroll {
   max-width: 695px;
   line-height: 105%;
 }
+@media (max-width: 768px) {
+  .problem-solution__title {
+    font-size: 30px;
+  }
+}
 .problem-solution__cards {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 95px 40px;
+}
+@media (max-width: 1400px) {
+  .problem-solution__cards {
+    gap: 55px 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .problem-solution__cards {
+    gap: 80px 20px;
+  }
 }
 .problem-solution__card {
   position: relative;
@@ -1062,16 +1079,51 @@ body.no-scroll {
   background-position: center;
   transform: rotate(18deg);
 }
+@media (max-width: 1200px) {
+  .problem-solution__card {
+    padding-left: 0;
+    max-width: 460px;
+  }
+  .problem-solution__card::before {
+    top: -15px;
+    transform: rotate(18deg) translateY(-100%);
+  }
+}
+@media (max-width: 992px) {
+  .problem-solution__card {
+    max-width: 100%;
+  }
+  .problem-solution__card::before {
+    width: 27px;
+    height: 27px;
+  }
+}
 .problem-solution__subtitle {
   margin-bottom: 20px;
   font-family: "RadioCanada-Medium", sans-serif;
+  font-weight: 500;
   font-size: 44px;
   line-height: 105%;
   color: #0a8ed9;
 }
+@media (max-width: 1800px) {
+  .problem-solution__subtitle {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1200px) {
+  .problem-solution__subtitle {
+    font-size: 24px;
+  }
+}
 .problem-solution__text {
   font-family: "RadioCanada-Light", sans-serif;
   line-height: 125%;
+}
+@media (max-width: 576px) {
+  .problem-solution__text {
+    font-size: 16px;
+  }
 }
 
 .faq {

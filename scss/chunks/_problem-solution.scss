@@ -5,6 +5,10 @@
     margin-bottom: 85px;
     max-width: 695px;
     line-height: 105%;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
   }
 
   &__cards {
@@ -12,6 +16,14 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 95px 40px;
+
+    @media (max-width: 1400px) {
+      gap: 55px 20px;
+    }
+
+    @media (max-width: 1200px) {
+      gap: 80px 20px;
+    }
   }
 
   &__card {
@@ -32,18 +44,50 @@
       background-position: center;
       transform: rotate(18deg);
     }
+
+    @media (max-width: 1200px) {
+      padding-left: 0;
+      max-width: 460px;
+
+      &::before {
+        top: -15px;
+        transform: rotate(18deg) translateY(-100%);
+      }
+    }
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+
+      &::before {
+        width: 27px;
+        height: 27px;
+      }
+    }
   }
 
   &__subtitle {
     margin-bottom: 20px;
     font-family: 'RadioCanada-Medium', sans-serif;
+    font-weight: 500;
     font-size: 44px;
     line-height: 105%;
     color: #0a8ed9;
+
+    @media (max-width: 1800px) {
+      font-size: 34px;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 24px;
+    }
   }
 
   &__text {
     font-family: 'RadioCanada-Light', sans-serif;
     line-height: 125%;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
   }
 }
