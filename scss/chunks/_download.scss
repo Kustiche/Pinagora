@@ -2,6 +2,10 @@
   padding: 160px 0 175px 0;
   background-color: #ffffff;
 
+  @media (max-width: 992px) {
+    padding: 100px 0 115px 0;
+  }
+
   &__container {
     max-width: 755px;
   }
@@ -14,17 +18,37 @@
 
   &__title {
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
+      font-size: 31px;
+    }
   }
 
   &__text {
     margin-bottom: 50px;
     text-align: center;
     font-size: 28px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 18px;
+    }
   }
 
   &__icon-download {
     margin-bottom: 40px;
     width: 392px;
     height: 114px;
+
+    @media (max-width: 992px) {
+      margin-bottom: 30px;
+      width: 319px;
+      height: 92px;
+    }
   }
 }

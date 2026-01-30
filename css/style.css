@@ -106,6 +106,7 @@ body.no-scroll {
     font-family: "RadioCanada-SemiBold", sans-serif;
     font-weight: 600;
     font-size: 44px;
+    line-height: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -132,6 +133,11 @@ body.no-scroll {
 }
 .link:hover {
   transform: scale(0.9);
+}
+@media (max-width: 992px) {
+  .link {
+    padding: 15px 0;
+  }
 }
 @media (max-width: 576px) {
   .link {
@@ -1183,6 +1189,11 @@ body.no-scroll {
   padding: 160px 0 175px 0;
   background-color: #ffffff;
 }
+@media (max-width: 992px) {
+  .download {
+    padding: 100px 0 115px 0;
+  }
+}
 .download__container {
   max-width: 755px;
 }
@@ -1194,15 +1205,39 @@ body.no-scroll {
 .download__title {
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .download__title {
+    margin-bottom: 10px;
+    font-size: 31px;
+  }
+}
 .download__text {
   margin-bottom: 50px;
   text-align: center;
   font-size: 28px;
 }
+@media (max-width: 992px) {
+  .download__text {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .download__text {
+    font-size: 18px;
+  }
+}
 .download__icon-download {
   margin-bottom: 40px;
   width: 392px;
   height: 114px;
+}
+@media (max-width: 992px) {
+  .download__icon-download {
+    margin-bottom: 30px;
+    width: 319px;
+    height: 92px;
+  }
 }
 
 .footer {
