@@ -150,6 +150,11 @@ body.no-scroll {
   display: flex;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .nav__menu {
+    flex-direction: column;
+  }
+}
 .nav__item {
   margin-right: 40px;
   font-size: 18px;
@@ -160,9 +165,18 @@ body.no-scroll {
     margin-right: 20px;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .nav__item {
     margin-right: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .nav__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .nav__item:last-of-type {
+    margin-bottom: 0;
   }
 }
 .nav__item:last-of-type {
@@ -1244,10 +1258,20 @@ body.no-scroll {
   padding: 55px 0 120px 0;
   background-color: #cdedff;
 }
+@media (max-width: 992px) {
+  .footer {
+    padding-bottom: 90px;
+  }
+}
 .footer__wrap {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (max-width: 992px) {
+  .footer__wrap {
+    align-items: center;
+  }
 }
 .footer__content {
   display: flex;
@@ -1256,8 +1280,18 @@ body.no-scroll {
   margin-bottom: 25px;
   width: 100%;
 }
+@media (max-width: 992px) {
+  .footer__content {
+    flex-direction: column;
+  }
+}
 .footer__link {
   line-height: 0;
+}
+@media (max-width: 992px) {
+  .footer__link {
+    margin-bottom: 30px;
+  }
 }
 .footer__logo {
   width: 269px;
@@ -1270,16 +1304,31 @@ body.no-scroll {
   padding-left: 10px;
   max-width: 575px;
 }
+@media (max-width: 992px) {
+  .footer__form {
+    padding-left: 0;
+  }
+}
 .footer__label {
   margin-bottom: 20px;
   font-family: "RadioCanada-Light", sans-serif;
   line-height: 125%;
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  .footer__label {
+    text-align: center;
+  }
+}
 .footer__inner {
   display: flex;
   align-items: center;
   width: 100%;
+}
+@media (max-width: 992px) {
+  .footer__inner {
+    flex-direction: column;
+  }
 }
 .footer__input {
   padding: 15px;
@@ -1302,6 +1351,13 @@ body.no-scroll {
   line-height: 140%;
   color: #718096;
 }
+@media (max-width: 992px) {
+  .footer__input {
+    margin-bottom: 15px;
+    max-width: 100%;
+    border-radius: 4px;
+  }
+}
 .footer__btn {
   border: 1px solid #0a8ed9;
   padding: 15px 50px;
@@ -1315,4 +1371,10 @@ body.no-scroll {
 .footer__btn:hover {
   color: #0a8ed9;
   background-color: #ffffff;
+}
+@media (max-width: 992px) {
+  .footer__btn {
+    padding: 15px 99px;
+    border-radius: 30px;
+  }
 }

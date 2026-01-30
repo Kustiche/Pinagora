@@ -55,6 +55,10 @@
   &__menu {
     display: flex;
     align-items: center;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -66,8 +70,17 @@
       margin-right: 20px;
     }
 
-    @media (max-width: 1400px) {
+    @media (max-width: 1200px) {
       margin-right: 10px;
+    }
+
+    @media (max-width: 992px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
 
     &:last-of-type {
