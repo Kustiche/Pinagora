@@ -41,10 +41,26 @@
       content: '';
       font-size: 0;
     }
+
+    @media (max-width: 1200px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 0 0 10px 0;
+    }
   }
 
   &__title {
     transition: color 0.4s;
+
+    @media (max-width: 768px) {
+      max-width: 520px;
+    }
+
+    @media (max-width: 576px) {
+      max-width: 290px;
+    }
   }
 
   &__icon {
@@ -66,6 +82,15 @@
     font-family: 'RadioCanada-Light', sans-serif;
     font-size: 20px;
     line-height: 125%;
+
+    @media (max-width: 992px) {
+      padding: 10px 5px 15px 0;
+      font-size: 18px;
+    }
+
+    @media (max-width: 567px) {
+      font-size: 16px;
+    }
   }
 
   &:open {

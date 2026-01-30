@@ -208,8 +208,28 @@ body.no-scroll {
   content: "";
   font-size: 0;
 }
+@media (max-width: 1200px) {
+  .spoller__header {
+    font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .spoller__header {
+    padding: 0 0 10px 0;
+  }
+}
 .spoller__title {
   transition: color 0.4s;
+}
+@media (max-width: 768px) {
+  .spoller__title {
+    max-width: 520px;
+  }
+}
+@media (max-width: 576px) {
+  .spoller__title {
+    max-width: 290px;
+  }
 }
 .spoller__icon {
   width: 15px;
@@ -228,6 +248,17 @@ body.no-scroll {
   font-family: "RadioCanada-Light", sans-serif;
   font-size: 20px;
   line-height: 125%;
+}
+@media (max-width: 992px) {
+  .spoller__text {
+    padding: 10px 5px 15px 0;
+    font-size: 18px;
+  }
+}
+@media (max-width: 567px) {
+  .spoller__text {
+    font-size: 16px;
+  }
 }
 .spoller:open .spoller__title {
   color: #0a8ed9;
@@ -1133,6 +1164,11 @@ body.no-scroll {
 
 .faq {
   padding: 75px 0 150px 0;
+}
+@media (max-width: 992px) {
+  .faq {
+    padding: 40px 0 85px 0;
+  }
 }
 .faq__title {
   margin-bottom: 55px;
