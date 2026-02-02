@@ -661,6 +661,7 @@ body.no-scroll {
 
 .about-us {
   padding: 40px 0 70px 0;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .about-us {
@@ -690,7 +691,7 @@ body.no-scroll {
 }
 @media (max-width: 992px) {
   .about-us__content {
-    margin-bottom: 75px;
+    margin-bottom: 45px;
     max-width: 100%;
   }
 }
@@ -826,8 +827,10 @@ body.no-scroll {
     transform: rotate(10deg);
   }
   .about-us__images::after {
-    top: -70px;
-    right: -65px;
+    top: -45px;
+    right: -35px;
+    width: 67px;
+    height: 68px;
   }
 }
 .about-us__smiling-people {
